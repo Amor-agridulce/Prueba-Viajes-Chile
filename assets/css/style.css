@@ -28,11 +28,9 @@ hr {
     max-height: 30px;
 }
 
-.iconos {
-    background-color: #17A3B8;
-}
-
-.card-body {
+.iconos,
+.card-body,
+.footer {
     background-color: #17A3B8;
 }
 
