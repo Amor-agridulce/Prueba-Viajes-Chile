@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+main {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+hr {
+    top: 20px;
+    border: none;
+    height: 5px;
+    color: #17A3B8;
+    background-color: #17A3B8;
+    opacity: 1;
+}
+
 .navbar {
     Position: absolute;
     z-index: 2;
@@ -14,4 +28,12 @@
     max-height: 30px;
 }
 
-.menu {}
+.iconos {
+    background-color: #17A3B8;
+}
+
+@media (max-width:800px) {
+    #parrafos {
+        display: none !important;
+    }
+}
