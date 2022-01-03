@@ -40,7 +40,6 @@
         
         .h2,
         .iconos {
-            display: inline-block;
             font-size: 25px;
             font-weight: 700;
             text-align: center;
@@ -48,6 +47,8 @@
         
         .footer {
             color: #ffffff;
+            padding-right: 200px;
+            padding-left: 200px;
         }
         
         @media (max-width: 800px) {
