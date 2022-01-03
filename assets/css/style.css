@@ -4,6 +4,10 @@
             box-sizing: border-box;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         main {
             background-color: #000000;
             color: #ffffff;
@@ -29,30 +33,29 @@
         }
         
         .iconos,
-        .card-body,
+        .card,
         .footer {
             background-color: #17A3B8;
         }
         
+        .fotocarousel {
+            max-height: 682px;
+        }
+        
         .card-img-top {
-            max-height: 160px;
+            max-height: 133px;
         }
         
         .h2,
         .iconos {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
             text-align: center;
+            text-decoration: none
         }
         
         .footer {
             color: #ffffff;
-            padding-right: 200px;
-            padding-left: 200px;
-        }
-        
-        @media (max-width: 800px) {
-            #parrafos {
-                display: none !important;
-            }
+            padding-right: 20%;
+            padding-left: 20%;
         }

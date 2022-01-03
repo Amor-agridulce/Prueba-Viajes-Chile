@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
-
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="assets/img/viajes.svg" type="image/x-icon">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--JQUERY CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--FUENTE-->
 
     <!--ICONOS-->
@@ -20,15 +23,15 @@
 <body>
 
     <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container-fluid px-5">
-            <a class="navbar-brand" href="#">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent" id="#">
+        <div class="container-fluid ">
+            <a class="navbar-brand mx-4" href="#">
                 <img src="assets/img/viajes.svg" alt="logo" class="logo d-inline-block align-text-top"> Viajes Chile
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end mx-3" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     <a class="nav-link" href="#QuienesSomos">Quienes Somos</a>
@@ -45,13 +48,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Paisaje llama">
+                        <img src="assets/img/carousel1.jpg" class="fotocarousel d-block w-100" alt="Paisaje llama">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Paisaje Rapanui">
+                        <img src="assets/img/carousel2.jpg" class="fotocarousel d-block w-100" alt="Paisaje Rapanui">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pingüino">
+                        <img src="assets/img/carousel3.jpg" class="fotocarousel d-block w-100" alt="Pingüino">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -71,7 +74,7 @@
             <hr>
             <div class="row mt-4">
                 <div class="col-4">
-                    <div class="iconos  text-center py-1">
+                    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Viajes" class="iconos  text-center py-1">
                         <i class="fas fa-plane fa-2x"></i>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum repudiandae modi asperiores eaque! Odit excepturi quia rerum omnis nostrum nam deserunt quisquam earum, et minus, reiciendis libero fugiat repudiandae. Explicabo odio distinctio
@@ -84,19 +87,18 @@
                         quaerat omnis quae odit, a maxime dolores alias unde aliquid exercitationem laudantium eius repudiandae quibusdam. Harum quas in debitis laudantenim facere? Necessitatibus earum dolore perspiciatis a nulla magnam asperiores, sit
                         aperiam rerum ducimus. Eligendi distinctio tenetur molestiae repudiandae harum et officia expedita vel aliquid quibusdam esse libero, molestias illum beatae! Nobis, libero dolor mollitia dolorum eum optio corrupti impedit!
                     </p>
-                    <div class="iconos text-center py-1">
+                    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Expediciones" class="iconos text-center py-1">
                         <i class="fas fa-mountain fa-2x"></i>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="iconos text-center py-1">
+                    <div data-bs-toggle="tooltip" data-bs-placement="top" title="Rutas" class="iconos text-center py-1">
                         <i class="fas fa-route fa-2x"></i>
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, rem suscipit magni possimus voluptatem similique doloribus aliquid autem quo minus ratione maiores fuga debitis a quasi cupiditate id qui illum esse consequatur? Odio
                         doloremque nesciunt consequuntur quis sapiente laudantium quasi illum, ex fugit aliquam quas corporis ipsum neque repellat iste. Saepe beatae odit ducimus autem deleniti ad laborum provident, optio veniam quis officiis, maiores
                         atque repudiandae molestiae totam impedit tempora exercitationem obcaecati hic minima consequuntur sed eveniet reprehenderit deserunt! Ipsa odio excepturi aut, rerum non magni, maiores nemo velit quia magnam, dolorem adipisci quam
                         tempora ad nesciunt! Totam, quaerat dolores.</p>
-
                 </div>
             </div>
             <!--Fin del row-->
@@ -106,41 +108,41 @@
         <section class="container" id="Destacados">
             <h3 class="text-center mt-5 mb-4">Destacados</h3>
             <hr>
-            <div class="row mx-3 my-4">
+            <div class="row row-cols-1 row-cols-md-4 g-3">
                 <!--Cartas-->
-                <div class="col-3">
-                    <div class="card">
+                <div class="col-md-3">
+                    <div class="card h-100">
                         <img src="assets/img/card1.jpg" class="card-img-top" alt="Paisaje lago">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h5 data-bs-toggle="tooltip" data-bs-placement="top" title="Click para esconder textos" class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <img src="assets/img/card2.jpg " class="card-img-top " alt="Paisaje lago ">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="assets/img/card2.jpg " class="card-img-top " alt="Paisaje montañas ">
                         <div class="card-body ">
-                            <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
+                            <h5 data-bs-toggle="tooltip" data-bs-placement="top" title="Click para esconder textos" class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 ">
-                    <div class="card ">
-                        <img src="assets/img/card3.jpg " class="card-img-top " alt="Paisaje lago ">
+                <div class="col-md-3 ">
+                    <div class="card h-100">
+                        <img src="assets/img/card3.jpg " class="card-img-top " alt="Paisaje desierto ">
                         <div class="card-body ">
-                            <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
+                            <h5 data-bs-toggle="tooltip" data-bs-placement="top" title="Click para esconder textos" class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 ">
-                    <div class="card ">
-                        <img src="assets/img/card4.jpg " class="card-img-top " alt="Paisaje lago ">
+                <div class="col-md-3 ">
+                    <div class="card h-100">
+                        <img src="assets/img/card4.jpg " class="card-img-top " alt="Paisaje bosque ">
                         <div class="card-body ">
-                            <h5 class="card-title ">Lorem ipsum dolor sit amet</h5>
-                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
+                            <h5 data-bs-toggle="tooltip" data-bs-placement="top" title="Click para esconder textos" class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia non voluptates iure? Officiis ad, sint libero possimus eius dolorem.</p>
                         </div>
                     </div>
                 </div>
@@ -160,13 +162,13 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer d-flex align-content-center justify-content-between">
-        <h2 class="h2 mt-2 fs-2">VIAJES CHILE</h2>
+    <footer class="footer pb-1 d-flex align-content-center justify-content-between">
+        <a class="h2 mt-2 fs-2 text-white" href="#">VIAJES CHILE</a>
         <div class="iconos d-flex gap-3 fs-2 mt-1">
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github-square text-white"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin text-white"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square text-white"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square text-white"></i></a>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Github" href="https://github.com/" target="_blank"><i class="fab fa-github-square text-white"></i></a>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin text-white"></i></a>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square text-white"></i></a>
+            <a data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square text-white"></i></a>
         </div>
     </footer>
 
