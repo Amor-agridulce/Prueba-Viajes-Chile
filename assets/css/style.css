@@ -1,64 +1,63 @@
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        main {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        
-        hr {
-            top: 20px;
-            border: none;
-            height: 2px !important;
-            color: #17A3B8;
-            background-color: #17A3B8;
-            opacity: 1;
-        }
-        
-        .navbar {
-            z-index: 2;
-            width: 100%;
-        }
-        
-        .logo {
-            max-height: 30px;
-        }
-        
-        .iconos,
-        .card,
-        .footer {
-            background-color: #17A3B8;
-        }
-        
-        .fotocarousel {
-            max-height: 682px;
-        }
-        
-        .card-img-top {
-            max-height: 133px;
-        }
-        
-        .h2,
-        .iconos {
-            font-size: 20px;
-            font-weight: 600;
-            text-align: center;
-            text-decoration: none
-        }
-        
-        .footer {
-            color: #ffffff;
-            padding-right: 20%;
-            padding-left: 20%;
-        }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    main {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    hr {
+        top: 20px;
+        border: none;
+        height: 2px !important;
+        color: #17A3B8;
+        background-color: #17A3B8;
+        opacity: 1;
+    }
+    
+    .navbar {
+        z-index: 2;
+        width: 100%;
+    }
+    
+    .logo {
+        max-height: 30px;
+    }
+    
+    .iconos,
+    .card,
+    .footer {
+        background-color: #17A3B8;
+    }
+    
+    .fotocarousel {
+        max-height: 682px;
+    }
+    
+    .card-img-top {
+        max-height: 133px;
+    }
+    
+    .h2,
+    .iconos {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .viajes,
+    .iconos {
+        display: inline-block;
+    }

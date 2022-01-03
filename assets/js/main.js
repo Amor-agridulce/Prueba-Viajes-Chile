@@ -8,5 +8,4 @@ $(function() {
         $('.card-text').toggle();
     });
 
-
 });
